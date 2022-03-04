@@ -5,17 +5,25 @@
 <body>
     <style>
         h1{
+            display: grid;
             justify-self: center;
-            align-self: center;
+            position: relative;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             font-size: 15px;
             font-weight: 400;
+            z-index: 2;
+            background-color: white;
+            color: black;
         }
 
         h2{
             font-family:Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+            z-index: 2;
             font-size: 20px;
             font-weight: 500;
+            background-color: white;
+            color: black;
         }
 
     </style>
@@ -25,12 +33,14 @@
         <div class="headline">the fashion journal</div>
         <div class="search"> 
             <div class="searchbox">search</div>
-            <div>subscribe sign in</div> 
+            <a href=""><div>subscribe</div></a> &nbsp; <a href=""><div>sign in</div></a>
     </main>
     
 
     <main class="links">
-        <p> <pre>fashion beauty lifestyle OOTD culture homedecor</pre> </p>
+        <div class="links_hover">
+            <p>fashion beauty lifestyle OOTD culture homedecor</p>
+        </div>
     </main>
 
     <main class="todayspick">
@@ -39,31 +49,33 @@
 
     <main class="sections">
         <div class="leftside">
-           <div><img class="shoe" src="image.img/shoe.webp">
-        <h1> NEW! hyperdunk 1s</h1> 
-        <h2>don't miss the release of these exclusive sneaker on Feb. 25th!</h2>
+           <div class="shoe_box"><a href="https://stockx.com/nike-dunk-low-off-white-pine-green"><img class="shoe" src="image.img/shoe.webp"></a>
+        <a href="https://stockx.com/nike-dunk-low-off-white-pine-green"><h1 class="h1">NEW! hyperdunk 1s</h1></a>
+        <a href="https://stockx.com/nike-dunk-low-off-white-pine-green"><h2 class="h2">don't miss the release of these exclusive sneaker on Feb. 25th!</h2></a>
     </div> 
-            <div><img class="watch" src="image.img/watch.webp">
-                <h1> Replacement for apple watch?</h1> 
-                <h2>new technology could replace the apple watch</h2>
+            <div class="shoe_box"><a href="https://www.samsung.com/us/watches/galaxy-watch4-classic/"><img class="watch" src="image.img/watch.webp"></a>
+                <a href="https://www.samsung.com/us/watches/galaxy-watch4-classic/"><h1> Replacement for apple watch?</h1> </a>
+                <a href="https://www.samsung.com/us/watches/galaxy-watch4-classic/"><h2> new technology could replace the apple watch</h2></a>
             </div>
         </div>
-        <div class="maria">
-            <img src="image.img/model.webp" alt="mainstory"> <br>
-            <h1>Maria Starkov on the modeling industry</h1> <br>
-            <h2>"we need to be more transparent about the effects of this industry on young adults and stop glorifying the term 'model'"</h2>
-        </div> 
+        <div class="maria_container">
+            <div class="maria">
+                <a href="https://www.jobmonkey.com/modelingjobs/pros-cons/"><img src="image.img/model.webp" alt="mainstory"> <br></a>
+                <div class="maria_flex">
+                    <a href="https://www.jobmonkey.com/modelingjobs/pros-cons/"><h1>Maria Starkov on the modeling industry</h1></a>
+                    <a href="https://www.jobmonkey.com/modelingjobs/pros-cons/"><h2>"we need to be more transparent about the effects of this industry on young adults and stop glorifying the term 'model'"</h2></a>
+                </div>
+            </div> 
+        </div>
         <div class="rightside">
-            <div><img class="shoe" src="image.img/camera.webp">
-                <h1> Canon SG61</h1> 
-                <h2>Join the debate on the best canon models here!</h2>
+            <div class="shoe_box">
+                <a href="https://www.dpreview.com/products/canon/cameras?subcategoryId=cameras&page=1"><img class="shoe" src="image.img/camera.webp"></a>
+                <a href="https://www.dpreview.com/products/canon/cameras?subcategoryId=cameras&page=1"><h1> Canon SG61</h1></a>
+                <a href="https://www.dpreview.com/products/canon/cameras?subcategoryId=cameras&page=1"><h2>Join the debate on the best canon models here!</h2></a>
             </div>
-            <div><img class="watch" src="image.img/interior.webp">
-                <h1> Ideas for interiors</h1> 
-            <h2>Looking to spruce up the creative space? Click here for some of our reader's favorites.</h2></div>
+            <div class="shoe_box"><a href="https://www.decorilla.com/online-decorating/interior-design-styles-101/"><img class="watch" src="image.img/interior.webp"></a>
+            <a href="https://www.decorilla.com/online-decorating/interior-design-styles-101/"><h1> Ideas for interiors</h1></a> 
+            <a href="https://www.decorilla.com/online-decorating/interior-design-styles-101/"><h2>Looking to spruce up the creative space? Click here for some of our reader's favorites.</h2></a></div>
         </div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
     </main>
 </body>

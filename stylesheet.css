@@ -10,6 +10,14 @@ body{
 
 }
 
+.search>a{
+    color: black;
+}
+
+.search>a:hover{
+color: thistle;
+}
+
 .headline{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 50px;
@@ -72,19 +80,64 @@ body{
     margin-bottom: 10;
 }
 
+
 .sections{
 display: grid;
 grid-template-columns: 25% 44% 25%;
 grid-template-rows: 2;
 row-gap: 5%;
 column-gap: 3%;
+grid-template-areas: 'overlap';
 }
 
-.maria>img{
-    grid-column: 2/3;
+.maria_container{
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+}
+
+.maria_container>.maria>:nth-child(1){
+    grid-row: 1/2;
+}
+
+.maria{
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+    width: 509.683px;
+    height: 1190.98px;
+    color: white;
+    grid-template-areas: 'overlap';
+}
+
+.maria>:nth-child(1){
+    grid-row: 1/2;
+    width: 510px;
+    height: 715px;
+}
+
+.maria>a>img{
+    grid-column: 1/3;
     object-fit:cover;
-    width: 519px;
-    height: 1025px;
+    width: 510px;
+    height: 953px;
+}
+
+.maria_flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.maria>.maria_flex{
+    grid-row: 3;
+}
+
+.maria:hover{
+    opacity: 1;
+    transform: scale(1.01);
+    transition: transform 250ms ease-in-out;
+}
+
+.maria{
+    transition: transform 250ms ease-in-out;
 }
 
 .leftside{
@@ -92,6 +145,41 @@ column-gap: 3%;
     grid-template-columns: 1;
     grid-template-rows: 47.5% 47.5%;
     row-gap: 5%;
+    grid-template-areas: 'overlap';
+}
+
+.shoe_box{
+    display:flex;
+    flex-direction: column;
+    width: 295px;
+    height:565.717px;
+    color:white;
+    position: relative;
+    z-index: 1;
+}
+
+.shoe_box:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: transform 250ms ease-in-out;
+}
+
+.shoe_box{
+    transition: transform 100ms ease-in-out;
+}
+
+
+.h1{
+    width: 295px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    grid-column: 2/1;
+    }
+
+.h2{
+    background-color: white;
+    color: black;
 }
 
 .rightside{
@@ -113,6 +201,10 @@ column-gap: 3%;
     object-fit:cover;
     width: 295px;
     height: 430px;
+}
+
+a:link{
+    text-decoration: none;
 }
 
 @media (min-width:480px) {
