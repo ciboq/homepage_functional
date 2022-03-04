@@ -1,0 +1,122 @@
+body{
+    padding: 10vh;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1;
+    padding-bottom: 10px;
+
+}
+
+.headline{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.search>div:first-child{
+    margin-right: 10px;}
+
+.searchbox{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px black;
+    padding-right: 3px;
+    text-align: right;
+}
+
+.header>img:nth-child(1){
+    grid-column: 1/2;
+    width: 25%;
+}
+
+.header>div:nth-child(2){
+    grid-column: 2/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.header>div:nth-child(3){
+    grid-column: 4/5;
+    justify-self: right;
+    align-self: center;
+}
+
+.links{
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30;
+}
+
+.todayspick{
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10;
+}
+
+.sections{
+display: grid;
+grid-template-columns: 25% 44% 25%;
+grid-template-rows: 2;
+row-gap: 5%;
+column-gap: 3%;
+}
+
+.maria>img{
+    grid-column: 2/3;
+    object-fit:cover;
+    width: 519px;
+    height: 1025px;
+}
+
+.leftside{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 47.5% 47.5%;
+    row-gap: 5%;
+}
+
+.rightside{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 47.5% 47.5%;
+    row-gap: 5%;
+}
+
+.shoe{
+    grid-row: 1/2;
+    object-fit:cover;
+    width: 295px;
+    height: 430px;
+}
+
+.watch{
+    grid-row: 2/3;
+    object-fit:cover;
+    width: 295px;
+    height: 430px;
+}
+
+@media (min-width:480px) {
+    body{
+        display: grid;
+    }
+}

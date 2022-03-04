@@ -1,2 +1,2 @@
-# homepage_functional
+# homepage design
  
